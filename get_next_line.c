@@ -6,7 +6,7 @@
 /*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 12:13:49 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/09 18:24:58 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/09 18:35:32 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ int		ft_next_line(char **str, char **line)
 		aux = ft_strdup(&((*str)[len + 1]));
 		free(*str);
 		*str = aux;
-		if ((*str)[0] == '\0')
+/*		if ((*str)[0] == '\0')
 		{
 			free(*str);
 			*str = NULL;
-		}
+		}*/
 	}
 	else
 	{
