@@ -1,17 +1,24 @@
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/12/09 11:40:40 by jcornejo          #+#    #+#             */
+/*   Updated: 2019/12/09 12:40:14 by jcornejo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	ft_strlen(char *s)
+#include "get_next_line.h"
+
+int		ft_strlen(char *s)
 {
 	int i;
 
 	i = 0;
 	while (s[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -71,18 +78,42 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (dest);
 }
 
-int     ft_strchr(char *s, char needle)
+int		ft_strchr(char *s, char needle)
 {
-    int i;
+	int i;
 
-    i = 0;
-    if (!(s || needle))
-        return (0);
-    while (s[i] != '\0')
-    {
-        if (s[i] == needle)
-            return (1);
-        i++;
-    }
-    return (0);
+	i = 0;
+	if (!(s || needle))
+		return (0);
+	while (s[i] != '\0')
+	{
+		if (s[i] == needle)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
+char	*ft_strdup(char *s1)
+{
+	char		*dup;
+	const char	*s2;
+	int			len;
+	int			i;
+
+	len = 0;
+	s2 = (char*)s1;
+	while (s2[len] != '\0')
+		len++;
+	dup = (char*)malloc(len + 1);
+	if (dup == NULL)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		dup[i] = s2[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
 }
