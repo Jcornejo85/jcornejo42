@@ -6,7 +6,7 @@
 /*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 11:49:11 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/09 17:11:08 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/09 18:53:11 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ char    *ft_substr(char *s, unsigned int start, size_t len);
 char    *ft_strjoin(char *s1, char *s2);
 int     ft_strchr(char *s, char needle);
 char	*ft_strdup(char *s1);
+int     ft_noline(char **line);
 
 #endif
