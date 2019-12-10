@@ -6,11 +6,11 @@
 /*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 12:13:49 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/10 18:20:02 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:23:08 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int		ft_next_line(char **str, char **line)
 {

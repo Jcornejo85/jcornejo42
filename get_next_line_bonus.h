@@ -6,12 +6,12 @@
 /*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 11:49:11 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/10 18:10:01 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/10 18:24:27 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		GET_NEXT_LINE_H
-# define	GET_NEXT_LINE_H
+#ifndef		GET_NEXT_LINE_BONUS_H
+# define	GET_NEXT_LINE_BONUS_H
 
 #include <stdio.h>
 #include <stdlib.h>
