@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcornejo <jcornejo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 12:13:49 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/10 18:20:02 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/11 19:44:29 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,13 @@ int		ft_noline(int ret, char **str, char **line)
 {
 	if (ret < 0)
 		return (-1);
-	if (ret == 0 && *str == NULL)
+	else if (ret == 0 && *str == NULL)
 	{
 		*line = ft_strdup("");
 		return (0);
 	}
-	return (ft_next_line(&(*str), line));
+	else 
+		return (ft_next_line(str, line));
 }
 
 int		get_next_line(int fd, char **line)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcornejo <jcornejo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 11:49:11 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/10 18:24:27 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/11 19:46:35 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int     ft_next_line(char **str, char **line);
 int		ft_strlen(char *s);
 char    *ft_substr(char *s, unsigned int start, size_t len);
 char    *ft_strjoin(char *s1, char *s2);
-int     ft_strchr(char *s, char needle);
+char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(char *s1);
 int     ft_noline(int ret, char **str, char **line);
 

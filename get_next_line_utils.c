@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcornejo <jcornejo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 11:40:40 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/09 12:40:14 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/11 19:41:09 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,20 +78,22 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (dest);
 }
 
-int		ft_strchr(char *s, char needle)
+char	*ft_strchr(const char *s, int c)
 {
-	int i;
+	char *str;
 
-	i = 0;
-	if (!(s || needle))
-		return (0);
-	while (s[i] != '\0')
+	str = (char *)s;
+	while (*str != '\0')
 	{
-		if (s[i] == needle)
-			return (1);
-		i++;
+		if (*str == c)
+			return (str);
+		str++;
 	}
-	return (0);
+	if (*str == c)
+		return (str);
+	if (c == 0)
+		return ("\0");
+	return (NULL);
 }
 
 char	*ft_strdup(char *s1)

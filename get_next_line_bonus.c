@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcornejo <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jcornejo <jcornejo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 12:13:49 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/10 18:23:08 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/11 19:46:31 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int		ft_noline(int ret, char **str, char **line)
 		*line = ft_strdup("");
 		return (0);
 	}
-	return (ft_next_line(&(*str), line));
+	return (ft_next_line(str, line));
 }
 
 int		get_next_line(int fd, char **line)
