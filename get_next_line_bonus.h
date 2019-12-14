@@ -6,25 +6,28 @@
 /*   By: jcornejo <jcornejo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/09 11:49:11 by jcornejo          #+#    #+#             */
-/*   Updated: 2019/12/11 19:46:35 by jcornejo         ###   ########.fr       */
+/*   Updated: 2019/12/14 11:38:45 by jcornejo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef		GET_NEXT_LINE_BONUS_H
 # define	GET_NEXT_LINE_BONUS_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
+//#define BUFFER_SIZE 33
+#define MAX_FD 4096
 
-int     get_next_line(int fd, char **line);
-int     ft_next_line(char **str, char **line);
-int		ft_strlen(char *s);
-char    *ft_substr(char *s, unsigned int start, size_t len);
-char    *ft_strjoin(char *s1, char *s2);
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+
+int		ft_strlen(char const *str);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strdup(const char *s1);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(char *s1);
-int     ft_noline(int ret, char **str, char **line);
+int get_next_line(int fd, char **line);
+
 
 #endif
